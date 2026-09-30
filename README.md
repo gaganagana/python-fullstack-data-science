@@ -1,80 +1,53 @@
-# Data Science & Machine Learning Portfolio
+# Python Full Stack & Data Science Coursework Projects
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Library-Pandas-150458.svg?logo=pandas)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/Library-NumPy-013243.svg?logo=numpy)](https://numpy.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-F7931E.svg?logo=scikitlearn)](https://scikit-learn.org/)
-[![Visualization](https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Seaborn-success.svg)](https://seaborn.pydata.org/)
-[![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-F37626.svg?logo=jupyter)](https://jupyter.org/)
+> **Student Training & Project Work**  
+> **Student:** Gagana C P  
+> **Institution:** Genesis Training & MCA Program  
 
-This repository contains practical **Data Science, Exploratory Data Analysis (EDA), and Machine Learning** projects developed during hands-on training at Genesis and academic coursework.
+This repository contains Python scripts, Jupyter notebooks, and datasets from my full-stack and data science training. I used these projects to practice Python data analysis libraries, exploratory data analysis (EDA), and basic machine learning workflows.
 
 ---
 
-## 📊 Project 1: Supermart Grocery Sales Analysis
+## What I Worked On
 
-### 🎯 Overview & Objectives
-An end-to-end Exploratory Data Analysis (EDA) on retail grocery transactions (`Supermart Grocery Sales - Retail Analytics Dataset.csv`) to extract business intelligence regarding product demand, revenue distribution, and profit margin dynamics.
+### 1. Supermarket Grocery Sales Analysis (`MiniProject.ipynb` & `MiniProject4.ipynb`)
+* **Dataset:** `Supermart Grocery Sales - Retail Analytics Dataset.csv` (contains retail transactions, product categories, sales, discounts, and profits).
+* **What I did:**
+  * Cleaned the raw data and checked for missing values using **Pandas**.
+  * Analyzed sales and profit trends across product categories (Bakery, Beverages, Snacks, Produce).
+  * Looked at how customer discounts affected overall profit margins.
+  * Created visual charts and distributions using **Matplotlib** and **Seaborn** to explain the findings clearly.
 
-### 🛠️ Key Analysis Steps (`MiniProject.ipynb`)
-1. **Data Preprocessing & Cleaning**:
-   - Ingested transactional retail sales data with customer and regional attributes.
-   - Handled date parsing and temporal ordering using `pd.to_datetime(df['Order Date'], errors='coerce')`.
-   - Verified schema structures, missing value distributions, and data type alignment.
-2. **Exploratory Data Analysis (EDA)**:
-   - Analyzed category-level sales volumes across Bakery, Beverages, Snacks, Produce, and Dairy.
-   - Evaluated the relationship between discount percentages and net profit margins.
-   - Assessed regional city-wise demand and seasonal sales patterns.
-3. **Data Visualization**:
-   - Built styled visualizations using **Matplotlib** and **Seaborn** to communicate revenue distribution and product profitability clearly.
+### 2. Social Network Ad Purchase Prediction (`DSDay4.ipynb`)
+* **Dataset:** `Social_Network_Ads.csv` (contains user age, estimated salary, and whether they purchased an advertised item).
+* **What I did:**
+  * Prepared and scaled numerical features using `StandardScaler`.
+  * Trained and compared basic classification models:
+    * **Logistic Regression**
+    * **Decision Tree Classifier**
+    * **Random Forest Classifier**
+  * Evaluated each model using confusion matrices, precision, recall, and accuracy scores.
 
----
-
-## 📈 Project 2: Customer Churn Prediction & Segmentation
-
-### 🎯 Problem Statement (`MiniProject4.ipynb`)
-In customer-centric industries, customer churn directly undermines recurring revenue and increases customer acquisition costs. This project builds and evaluates predictive classification models to identify customers at high risk of churning based on usage patterns and demographic characteristics.
-
-### 🛠️ Machine Learning Workflow
-1. **Data Ingestion & Feature Engineering**:
-   - Cleaned feature sets, encoded categorical attributes, and scaled numeric variables.
-2. **Model Training & Comparison**:
-   - **Logistic Regression**: Linear baseline probability model.
-   - **Decision Tree Classifier**: Interpretable rule-based splitting.
-   - **Random Forest Classifier**: Ensemble bagging for variance reduction and higher predictive accuracy.
-3. **Evaluation Metrics**:
-   - Evaluated models using Confusion Matrices, Precision, Recall, F1 Score, and ROC-AUC curves to ensure balanced detection of churners.
-4. **Business Recommendations**:
-   - Identified high-risk indicators to support targeted retention initiatives, contract adjustments, and proactive loyalty offerings.
+### 3. Salary Prediction Regression (`DS-DAY3.ipynb`)
+* **Dataset:** `Salary_Data.csv` (years of experience vs. salary).
+* **What I did:**
+  * Built a simple Linear Regression model using **Scikit-learn** to understand how feature relationships work in predictive modeling.
+  * Plotted the regression best-fit line against actual data points.
 
 ---
 
-## 📂 Repository Contents
+## Technologies Used
 
-| File | Description |
-| :--- | :--- |
-| **`MiniProject.ipynb`** | Supermart Grocery Sales Exploratory Data Analysis (EDA) & profit analysis |
-| **`MiniProject4.ipynb`** | Customer Churn Prediction and Machine Learning classification models |
-| **`Dataprepration&ML.ipynb`** | Data preprocessing, cleaning, and model preparation exercises |
-| **`DS-DAY3.ipynb` / `DSDay4.ipynb` / `DSDay5.ipynb` | Core statistical analysis and Pandas / NumPy coursework |
-| **`Supermart Grocery Sales - Retail Analytics Dataset.csv`** | Retail supermarket transaction dataset |
-| **`Social_Network_Ads.csv` / `Salary_Data.csv`** | Supplementary datasets for classification and regression tasks |
+* **Language:** Python 3
+* **Data Analysis:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-learn (Linear Regression, Logistic Regression, Decision Trees, Random Forest)
+* **Environment:** Jupyter Notebook
 
 ---
 
-## 🚀 How to Run
+## What I Learned
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/gaganagana/python-fullstack-data-science.git
-   cd python-fullstack-data-science
-   ```
-2. Set up a Python environment with required packages:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-   ```
-3. Launch Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-4. Open `MiniProject.ipynb` or `MiniProject4.ipynb` and run all cells.
+* How to inspect, clean, and filter data using Pandas DataFrames.
+* Creating meaningful bar charts, histograms, and scatter plots instead of just looking at raw numbers.
+* Splitting datasets into training and testing sets (`train_test_split`) and evaluating classification results using metrics like precision and recall rather than accuracy alone.
